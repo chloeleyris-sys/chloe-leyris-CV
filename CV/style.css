@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #03271a;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #cfe6dd;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 100px 10% 80px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ===== ACCUEIL ===== */
+.accueil-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.accueil .text {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.accueil .photo img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    border-left: 3px solid #03271a;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+.timeline .date {
+    font-weight: bold;
+    color: #03271a;
+}
+
+.timeline .content h3 {
+    margin: 10px 0;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience-card {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.experience-card img {
+    width: 150px;
+}
+
+.experience-text ul {
+    margin: 15px 0;
+}
+
+.experience-text li {
+    margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #03271a;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #021a12;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #03271a;
+    color: #f5f5f5;
+}
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.skills-column {
+    flex: 1;
+}
+
+.skills-column h3 {
+    color: #03271a;
+    margin-bottom: 15px;
+}
+
+.skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    background: #eaeaea;
+    padding: 12px 14px;
+    margin-bottom: 14px; /* interligne plus grand */
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
+.with-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 3;
+}
+
+.academic-buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+/* Boutons version académique */
+.btn.small {
+    padding: 8px 14px;
+    font-size: 0.85em;
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .with-buttons {
+        flex-direction: column;
+    }
+
+    .academic-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/* ===== HOBBIES ===== */
+.hobbies-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.05em;
+    line-height: 1.6;
+}
+
+.hobbies-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.hobbies-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (max-width: 900px) {
+    .hobbies-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .hobbies-gallery {
+        grid-template-columns: 1fr;
+    }
+}
